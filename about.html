@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src='js/jquery.svg3dtagcloud.min.js'></script>
+    <script src='js/mapbox-gl.js'></script>
+  <link href='css/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <div class="app_body about_page">
+        <div class="left_sidebar">
+            <div class="logo_container">
+              <a href="index.html"><img src="assets/logo.jpg"/></a>
+              <p>Web Developer</p>
+            </div>
+            <ul class="sidebar_menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">My Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social_media">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <a href="" id="drop_menu" onclick="return false;"><i class="fas fa-bars"></i></a>
+        <div class="about_container">
+            <div class="about_text">
+              <div class="about_heading">
+                <span class="animate__animated animate__bounceIn">M</span>
+                <span class="animate__animated animate__bounceIn delay-1">e</span>
+                <span class="animate__animated animate__bounceIn delay-2 margin-right-1">,</span>
+                <span class="animate__animated animate__bounceIn delay-3">M</span>
+                <span class="animate__animated animate__bounceIn delay-4">y</span>
+                <span class="animate__animated animate__bounceIn delay-5">s</span>
+                <span class="animate__animated animate__bounceIn delay-6">e</span>
+                <span class="animate__animated animate__bounceIn delay-7">l</span>
+                <span class="animate__animated animate__bounceIn delay-8 margin-right-1">f</span>
+                <span class="animate__animated animate__bounceIn delay-9">a</span>
+                <span class="animate__animated animate__bounceIn delay-10">n</span>
+                <span class="animate__animated animate__bounceIn delay-11 margin-right-1">d</span>
+                <span class="animate__animated animate__bounceIn delay-12">I</span>
+              </div>
+              <p class="animate__animated">The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.</p>
+              <p class="animate__animated">Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.</p>
+              <p class="animate__animated">My clients have found that launching with a well considered and well developed front-end has saved them time and money and makes for a product that is consistently of high quality.</p>
+            </div>
+            <div class="animate__animated globe_text">
+              <div id="tag">
+                <script>
+                  $( document ).ready( function() {
+
+          var entries = [ 
+              
+              { label: 'HTML5' },
+              { label: 'CSS3' },
+              { label: 'JavaScript' },
+              { label: 'Jquery' },
+              { label: 'VueJS' },
+              { label: 'Laravel' },
+              { label: 'PHP' },
+              { label: 'WordPress' },
+              { label: 'WooCommerce' },
+              { label: 'Angular'},
+              { label: 'Bootstrap' },
+              { label: 'Apache' },
+              { label: 'GULP' },
+              { label: 'SASS' },
+              { label: 'CMS' },
+              { label: 'MySql' },
+              { label: 'RestAPI' }
+
+          ];
+
+          var settings = {
+
+              entries: entries,
+              width: 680,
+              height: 780,
+              radius: '65%',
+              radiusMin: 75,
+              bgDraw: true,
+              bgColor: 'transparent',
+              opacityOver: 1.00,
+              opacityOut: 0.05,
+              opacitySpeed: 6,
+              fov: 800,
+              speed: 0.5,
+              fontFamily: 'Oswald, Arial, sans-serif',
+              fontSize: '20',
+              fontColor: '#21ff72',
+              fontWeight: 'bold',//bold
+              fontStyle: 'normal',//italic 
+              fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+              fontToUpperCase: false,
+              tooltipFontFamily: 'Oswald, Arial, sans-serif',
+              tooltipFontSize: '11',
+              tooltipFontColor: '#21ff72',
+              tooltipFontWeight: 'normal',//bold
+              tooltipFontStyle: 'normal',//italic 
+              tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+              tooltipFontToUpperCase: false,
+              tooltipTextAnchor: 'left',
+              tooltipDiffX: 0,
+              tooltipDiffY: 10
+
+          };
+
+          //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+          $( '#tag' ).svg3DTagCloud( settings );
+
+          } );
+                </script>
+              </div>
+            </div>
+          </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script >
+  $("#drop_menu").on('click', function(e){
+    e.preventDefault();
+    $('.left_sidebar').toggleClass("active_drop_menu");
+  });
+</script>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact me</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src='js/jquery.svg3dtagcloud.min.js'></script>
+    <script src='js/mapbox-gl.js'></script>
+  <link href='css/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <div class="app_body contact_body">
+        <div class="left_sidebar">
+            <div class="logo_container">
+              <a href="index.html"><img src="assets/logo.jpg"/></a>
+              <p>Web Developer</p>
+            </div>
+            <ul class="sidebar_menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">My Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social_media">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <a href="" id="drop_menu"><i class="fas fa-bars"></i></a>
+        <div class="contact_container">
+            <div class="contact_text">
+              <div class="contact_heading">
+                <span class="animate__animated animate__bounceIn">C</span>
+                <span class="animate__animated animate__bounceIn delay-1">o</span>
+                <span class="animate__animated animate__bounceIn delay-2">n</span>
+                <span class="animate__animated animate__bounceIn delay-3">t</span>
+                <span class="animate__animated animate__bounceIn delay-4">a</span>
+                <span class="animate__animated animate__bounceIn delay-5">c</span>
+                <span class="animate__animated animate__bounceIn delay-6 margin-right-1">t</span>
+                <span class="animate__animated animate__bounceIn delay-7">m</span>
+                <span class="animate__animated animate__bounceIn delay-8">e</span>
+              </div>
+              <p class="animate__animated">I'm interested in freelance opportunities - especially amibitious or large projects.<br>
+              However,if you have other request or question,don't hesitate to use the form.</p>
+              <div class="animate__animated contact_form">
+                <form action="">
+                  <div class="form_input name_input">
+                    <input type="text" class="name" name="name" placeholder="Name">
+                    <div class="input_underline"></div>
+                  </div>
+                  <div class="form_input email_input">
+                    <input type="email" class="contact_email" name="email" placeholder="Email">
+                    <div class="input_underline"></div>
+                  </div>
+                  <div class="form_input">
+                    <input type="text" class="subject" name="subject" placeholder="Subject">
+                    <div class="input_underline"></div>
+                  </div>
+                  <div class="form_input">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <div class="input_underline"></div>
+                  </div>
+                  <button class="contact_submit">Send Message
+                    <svg>
+                      <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="animate__animated contact_map">
+              <div id='map' style='width: 100%; min-height: 100%;'></div>
+              <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtZW1rZCIsImEiOiJja29jd21rOXIzZGV5MnhscHM1ZThmd20wIn0.8-H3s4wjWEnJpV7tIrhzMQ';
+                var map = new mapboxgl.Map({
+                  container: 'map',
+                  style: 'mapbox://styles/damemkd/ckqgk07ep0ps817qgn0ox4ik8'
+                });
+              </script>
+            </div>
+          </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script >
+  $("#drop_menu").on('click', function(e){
+    e.preventDefault();
+    $('.left_sidebar').toggleClass("active_drop_menu");
+  });
+</script>
+</html>

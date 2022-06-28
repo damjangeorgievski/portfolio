@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damjan Georgievski Skills</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src='js/jquery.svg3dtagcloud.min.js'></script>
+    <script src='js/mapbox-gl.js'></script>
+  <link href='css/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <div class="app_body contact_body">
+        <div class="left_sidebar">
+            <div class="logo_container">
+              <a href="index.html"><img src="assets/logo.jpg"/></a>
+              <p>Web Developer</p>
+            </div>
+            <ul class="sidebar_menu">
+                <li><a href="about.html">About</a></li>
+                <li><a href="skills.html">My Skills</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social_media">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <a href="" id="drop_menu"><i class="fas fa-bars"></i></a>
+        <div class="skills_container">
+            <div class="skills_text">
+                <div class="skills_heading">
+                    <span class="animate__animated animate__bounceIn">S</span>
+                    <span class="animate__animated animate__bounceIn delay-1">k</span>
+                    <span class="animate__animated animate__bounceIn delay-2">i</span>
+                    <span class="animate__animated animate__bounceIn delay-3">l</span>
+                    <span class="animate__animated animate__bounceIn delay-4">l</span>
+                    <span class="animate__animated animate__bounceIn delay-5 margin-right-1">s</span>
+                    <span class="animate__animated animate__bounceIn delay-6 margin-right-1">&</span>
+                    <span class="animate__animated animate__bounceIn delay-7">E</span>
+                    <span class="animate__animated animate__bounceIn delay-8">x</span>
+                    <span class="animate__animated animate__bounceIn delay-9">p</span>
+                    <span class="animate__animated animate__bounceIn delay-10">p</span>
+                    <span class="animate__animated animate__bounceIn delay-11">e</span>
+                    <span class="animate__animated animate__bounceIn delay-13">r</span>
+                    <span class="animate__animated animate__bounceIn delay-14">i</span>
+                    <span class="animate__animated animate__bounceIn delay-15">e</span>
+                    <span class="animate__animated animate__bounceIn delay-16">n</span>
+                    <span class="animate__animated animate__bounceIn delay-17">c</span>
+                    <span class="animate__animated animate__bounceIn delay-18">e</span>
+                  </div>
+                  <p class="animate__animated">I have many years experience as a full-stack developer and WordPress, creating responsive websites of a high quality.</p>
+              <p class="animate__animated">In my experience as a freelancer and working for agencies I have also obtained an eye for detail and appreciation for design, knowledge of integrating with and developing server-side, as well as knowing how to efficiently project manage and work with clients and colleagues successfully.</p>
+              <p class="animate__animated">I now specialise in back-end development but my knowledge of multiple fields allows me to work on a project with the full scope in mind; simplifying the process of our working together and producing a more cohesive experience for your users.</p>
+            </div>
+            <div class="skills-details">
+                <div class="skill_chart">
+                    <p>Front-end</p>
+                    <div class="skill_underline"></div>
+                    <div class="skill_score front_skill"></div>
+                </div>
+                <div class="skill_chart">
+                    <p>Back-end</p>
+                    <div class="skill_underline"></div>
+                    <div class="skill_score back_skill"></div>
+                </div>
+                <div class="skill_chart">
+                    <p>WordPress</p>
+                    <div class="skill_underline"></div>
+                    <div class="skill_score wordpress_skill"></div>
+                </div>
+                <div class="skill_chart">
+                    <p>Laravel</p>
+                    <div class="skill_underline"></div>
+                    <div class="skill_score laravel_skill"></div>
+                </div>
+                <div class="work_description">
+                    <h3>Full Stack Developer</h3>
+                    <p class="company_name">Netcetera</p>
+                    <span>2018-2021</span>
+                    <p>Creative brand, website design and development studio that can bring your online business dreams to life</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/main.js"></script>
+<script >
+    $("#drop_menu").on('click', function(e){
+      e.preventDefault();
+      $('.left_sidebar').toggleClass("active_drop_menu");
+    });
+  </script>
+</html>

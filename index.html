@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Damjan Georgievski Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src='js/jquery.svg3dtagcloud.min.js'></script>
+    <script src='js/mapbox-gl.js'></script>
+  <link href='css/mapbox-gl.css' rel='stylesheet' />
+  </head>
+<body>
+    <div class="app_body">
+        <div class="left_sidebar">
+            <div class="logo_container">
+              <a href="index.html"><img src="assets/logo.jpg"/></a>
+              <p>Web Developer</p>
+            </div>
+            <ul class="sidebar_menu">
+              <li><a href="about.html">About</a></li>
+              <li><a href="skills.html">My Skills</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="social_media">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <a href="" id="drop_menu"><i class="fas fa-bars"></i></a>
+          <div class="canvas_container">
+              <div class="canvas_text">
+                <h1>
+                  
+                  <span class="animate__animated animate__bounceIn">H</span>
+                  <span class="animate__animated animate__bounceIn delay-1">i</span>
+                  <span class="animate__animated animate__bounceIn delay-2">,</span>
+                  <br>
+                  <span class="animate__animated animate__bounceIn delay-3">I</span>
+                  <span class="animate__animated animate__bounceIn delay-4">'</span>
+                  <span class="margin-right-1 animate__animated animate__bounceIn delay-5">m</span>
+        
+                  <span class="color_span animate__animated animate__rollIn delay-6 mobile_padding" style="padding-left: 2rem">D</span>
+                  <span class="animate__animated animate__bounceIn delay-7">a</span>
+                  <span class="animate__animated animate__bounceIn delay-8">m</span>
+                  <span class="animate__animated animate__bounceIn delay-9">j</span>
+                  <span class="animate__animated animate__bounceIn delay-10">a</span>
+                  <span class="animate__animated animate__bounceIn delay-11">n</span>
+                  <span class="animate__animated animate__bounceIn delay-12">,</span>
+                  <br>
+                  <span class="animate__animated animate__bounceIn delay-13">w</span>
+                  <span class="animate__animated animate__bounceIn delay-14">e</span>
+                  <span class="margin-right-1 animate__animated animate__bounceIn delay-15">b</span>
+                  <span class="animate__animated animate__bounceIn delay-16 mobile_padding" style="padding-left: 2rem">d</span>
+                  <span class="animate__animated animate__bounceIn delay-17">e</span>
+                  <span class="animate__animated animate__bounceIn delay-18">v</span>
+                  <span class="animate__animated animate__bounceIn delay-19">e</span>
+                  <span class="animate__animated animate__bounceIn delay-20">l</span>
+                  <span class="animate__animated animate__bounceIn delay-21">o</span>
+                  <span class="animate__animated animate__bounceIn delay-22">p</span>
+                  <span class="animate__animated animate__bounceIn delay-23">e</span>
+                  <span class="animate__animated animate__bounceIn delay-24">r</span>
+                </h1>
+                <p class="animate__animated animate__fadeInUp delay-23">Full Stack Developer / Wordpress Expert</p>
+                <a href="contact.html" class="link_button animate__animated animate__fadeInUp delay-24">Contact me!
+                  <svg>
+                    <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                  </svg>
+                </a>
+                <div class="scroll_links">
+                  <div class="scroll_link">
+                    <p>scroll down</p>
+                    <i class="fas fa-arrow-down"></i>
+                  </div>
+                  <div class="scroll_link scroll_right">
+                    <p>scroll down</p>
+                    <i class="fas fa-arrow-down"></i>
+                  </div>
+                </div>
+              </div>
+              <canvas id="canvas">
+              </canvas>
+            </div>
+          <div class="portfolio_container">
+            <div class="portfolio_heading">
+              <span class="animate__animated">M</span>
+              <span class="animate__animated delay-1 margin-right-1">y</span>
+              <span class="animate__animated delay-2">P</span>
+              <span class="animate__animated delay-3">o</span>
+              <span class="animate__animated delay-4">r</span>
+              <span class="animate__animated delay-5">t</span>
+              <span class="animate__animated delay-6">f</span>
+              <span class="animate__animated delay-7">o</span>
+              <span class="animate__animated delay-8">l</span>
+              <span class="animate__animated delay-9">i</span>
+              <span class="animate__animated delay-10">o</span>
+            </div>
+            
+            <p class="animate__animated">I've done them all together with amazing people from companies around the globe.It's only a drop in the ocean compared to the entire list.</p>
+            <section class="animate__animated portfolio_links">
+              <div class="portfolio_link_wrapper fantasylab_wrapper">
+                <div class="portfolio_link fantasylab">
+                  <a href="https://fantasylab.io/" target="_blank">View Project</a>
+                </div>
+              </div>
+              <div class="portfolio_link_wrapper veditalia_wrapper">
+                <div class="portfolio_link veditalia">
+                  <a href="https://www.veditalia.com/" target="_blank">View Project</a>
+                </div>
+              </div>
+              <div class="portfolio_link_wrapper bazer_wrapper">
+                <div class="portfolio_link bazer">
+                  <a href="https://www.bazer-bashi.com/en/" target="_blank">View Project</a>
+                </div>
+              </div>
+              <div class="portfolio_link_wrapper iheal_wrapper">
+                <div class="portfolio_link iheal">
+                  <a href="https://ihealpaincenter.com/" target="_blank">View Project</a>
+                </div>
+              </div>
+              <div class="portfolio_link_wrapper enersport_wrapper">
+                <div class="portfolio_link enersport">
+                  <a href="https://www.enersport.it/" target="_blank">View Project</a>
+                </div>
+              </div>
+              <div class="portfolio_link_wrapper llumtech_wrapper">
+                <div class="portfolio_link llumtech">
+                  <a href="https://www.llumtech.com.br/" target="_blank">View Project</a>
+                </div>
+              </div>
+              <div class="portfolio_link_wrapper br_wrapper">
+                <div class="portfolio_link br">
+                  <a href="https://www.biorenatistemcell.com" target="_blank">View Project</a>
+                </div>
+              </div>
+              <div class="portfolio_link_wrapper design_wrapper">
+                <div class="portfolio_link design">
+                  <a href="https://designdiverso.com/" target="_blank">View Project</a>
+                </div>
+              </div>
+            </section>
+            <div class="work_backend">
+              <h1>Work</h1>
+            </div>
+          </div>
+          <div class="about_container">
+            <div class="about_text">
+              <div class="about_heading">
+                <span class="animate__animated">M</span>
+                <span class="animate__animated delay-1">e</span>
+                <span class="animate__animated delay-2 margin-right-1">,</span>
+                <span class="animate__animated delay-3">M</span>
+                <span class="animate__animated delay-4">y</span>
+                <span class="animate__animated delay-5">s</span>
+                <span class="animate__animated delay-6">e</span>
+                <span class="animate__animated delay-7">l</span>
+                <span class="animate__animated delay-8 margin-right-1">f</span>
+                <span class="animate__animated delay-9">a</span>
+                <span class="animate__animated delay-10">n</span>
+                <span class="animate__animated delay-11 margin-right-1">d</span>
+                <span class="animate__animated delay-12">I</span>
+              </div>
+              
+              <p class="animate__animated">The work I provide is of highest quality, fully responsive, and tested in a wide range of devices. I take great care to ensure each project is well-documented and easily maintainable so you can enhance a website as your company grows.</p>
+              <p class="animate__animated">Often front-end development of a website is overlooked, but being the part of your project that combines design, back-end development and the layer that your users interact with, from my experience, it is the most important to get right.</p>
+              <p class="animate__animated">My clients have found that launching with a well considered and well developed front-end has saved them time and money and makes for a product that is consistently of high quality.</p>
+            </div>
+            <div class="animate__animated globe_text">
+              <div id="tag">
+                <script>
+                  $( document ).ready( function() {
+
+          var entries = [ 
+              
+              { label: 'HTML5' },
+              { label: 'CSS3' },
+              { label: 'JavaScript' },
+              { label: 'Jquery' },
+              { label: 'VueJS' },
+              { label: 'Laravel' },
+              { label: 'PHP' },
+              { label: 'WordPress' },
+              { label: 'WooCommerce' },
+              { label: 'Angular'},
+              { label: 'Bootstrap' },
+              { label: 'Apache' },
+              { label: 'GULP' },
+              { label: 'SASS' },
+              { label: 'CMS' },
+              { label: 'MySql' },
+              { label: 'RestAPI' }
+
+          ];
+
+          var settings = {
+
+              entries: entries,
+              width: 680,
+              height: 780,
+              radius: '65%',
+              radiusMin: 75,
+              bgDraw: true,
+              bgColor: 'transparent',
+              opacityOver: 1.00,
+              opacityOut: 0.05,
+              opacitySpeed: 6,
+              fov: 800,
+              speed: 0.5,
+              fontFamily: 'Oswald, Arial, sans-serif',
+              fontSize: '20',
+              fontColor: '#21ff72',
+              fontWeight: 'bold',//bold
+              fontStyle: 'normal',//italic 
+              fontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+              fontToUpperCase: false,
+              tooltipFontFamily: 'Oswald, Arial, sans-serif',
+              tooltipFontSize: '11',
+              tooltipFontColor: '#21ff72',
+              tooltipFontWeight: 'normal',//bold
+              tooltipFontStyle: 'normal',//italic 
+              tooltipFontStretch: 'normal',//wider, narrower, ultra-condensed, extra-condensed, condensed, semi-condensed, semi-expanded, expanded, extra-expanded, ultra-expanded
+              tooltipFontToUpperCase: false,
+              tooltipTextAnchor: 'left',
+              tooltipDiffX: 0,
+              tooltipDiffY: 10
+
+          };
+
+          //var svg3DTagCloud = new SVG3DTagCloud( document.getElementById( 'holder'  ), settings );
+          $( '#tag' ).svg3DTagCloud( settings );
+
+          } );
+                </script>
+              </div>
+            </div>
+          </div>
+          <div class="contact_container">
+            <div class="contact_text">
+              <div class="contact_heading">
+                <span class="animate__animated">C</span>
+                <span class="animate__animated delay-1">o</span>
+                <span class="animate__animated delay-2">n</span>
+                <span class="animate__animated delay-3">t</span>
+                <span class="animate__animated delay-4">a</span>
+                <span class="animate__animated delay-5">c</span>
+                <span class="animate__animated delay-6 margin-right-1">t</span>
+                <span class="animate__animated delay-7">m</span>
+                <span class="animate__animated delay-8">e</span>
+              </div>
+              <p class="animate__animated">I'm interested in freelance opportunities - especially amibitious or large projects.<br>
+              However,if you have other request or question,don't hesitate to use the form.</p>
+              <div class="animate__animated contact_form">
+                <form action="">
+                  <div class="form_input name_input">
+                    <input type="text" class="name" name="name" placeholder="Name">
+                    <div class="input_underline"></div>
+                  </div>
+                  <div class="form_input email_input">
+                    <input type="email" class="contact_email" name="email" placeholder="Email">
+                    <div class="input_underline"></div>
+                  </div>
+                  <div class="form_input">
+                    <input type="text" class="subject" name="subject" placeholder="Subject">
+                    <div class="input_underline"></div>
+                  </div>
+                  <div class="form_input">
+                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <div class="input_underline"></div>
+                  </div>
+                  <button class="contact_submit">Send Message
+                    <svg>
+                      <rect x="0" y="0" fill="none" width="100%" height="100%"/>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="animate__animated contact_map">
+              <div id='map' style='width: 100%; min-height: 100%;'></div>
+              <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZGFtZW1rZCIsImEiOiJja29jd21rOXIzZGV5MnhscHM1ZThmd20wIn0.8-H3s4wjWEnJpV7tIrhzMQ';
+                var map = new mapboxgl.Map({
+                  container: 'map',
+                  style: 'mapbox://styles/damemkd/ckqgk07ep0ps817qgn0ox4ik8'
+                });
+              </script>
+            </div>
+          </div>
+      </div>
+      
+</body>
+<script src="js/main.js"></script>
+<script>
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
+
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
+
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+</script>
+</html>
